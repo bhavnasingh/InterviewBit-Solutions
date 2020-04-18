@@ -6,9 +6,9 @@ module.exports = {
         var arr = A.split('/')
         for(var i=0;i<arr.length;i++){
             if(arr[i]=== '..')
-                stack.pop();
+                stack.pop()
             else if(arr[i]=== '.' || arr[i]=== '')
-            	continue;
+                continue
             else stack.push(arr[i])
         }
         return '/' + stack.join('/')
